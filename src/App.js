@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { GetImageOfDay } from './Components/Image-day';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <section className='container'>
+        <h1><img src="https://lyricstranslate.com/files/styles/artist/public/Rick_and_Morty_logo.png" alt="" /></h1>
+      </section>
+      <div>
+
+        <div>
+          <GetImageOfDay />
+        </div>
+      </div>
     </div>
   );
 }
